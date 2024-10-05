@@ -4,54 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto de Innovación Sostenible</title>
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
     <!-- AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    
     <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/imagenes/logo-solo.ico" type="image/x-icon">
     <!-- model-viewer -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
 
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-verde-oscuro">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imagenes/logo.png" alt="Logo del Proyecto" width="40" height="40" class="d-inline-block align-text-top">
+                Proyecto Sostenible
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#proyecto">Proyecto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#app">App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#equipo">Nuestro Equipo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Página Principal -->
-    <header class="bg-primary text-white text-center py-5">
+    <header class="bg-blanco-yeso text-center py-5">
         <div class="container">
             <!-- Logo -->
-            <img src="assets/imagenes/logo.png" alt="Logo del Proyecto" class="mb-4" style="width: 150px;">
-            <h1 class="display-4">Nombre del Proyecto</h1>
-            <p class="lead">Innovando para un futuro sostenible</p>
-            <a href="#sobre" class="btn btn-light btn-lg mt-3">Descubre más</a>
+            <img src="assets/imagenes/logo-solo.png" alt="Logo del Proyecto" class="mb-4" style="width: 150px;">
+            <h1 class="display-4 text-verde-principal">GreenSheel</h1>
+            <p class="lead text-verde-oscuro">Transformando oportunidades</p>
+            <a href="#proyecto" class="btn btn-verde-claro btn-lg mt-3">Descubre más</a>
         </div>
     </header>
 
     <!-- Sobre el Proyecto -->
-    <section id="sobre" class="py-5">
+    <section id="proyecto" class="py-5 bg-verde-claro">
         <div class="container">
-            <h2 class="mb-4" data-aos="fade-up">Sobre el Proyecto</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Nuestro proyecto aborda [descripción del problema] y ofrece soluciones innovadoras en el ámbito de [área de sostenibilidad].</p>
-            <h4 data-aos="fade-up" data-aos-delay="200">Objetivos</h4>
-            <ul data-aos="fade-up" data-aos-delay="300">
+            <h2 class="mb-4 text-verde-oscuro" data-aos="fade-up">Sobre el Proyecto</h2>
+            <p class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="100">
+                Nuestro proyecto aborda [descripción del problema] y ofrece soluciones innovadoras en el ámbito de [área de sostenibilidad].
+            </p>
+            <h4 class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="200">Objetivos</h4>
+            <ul class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="300">
                 <li>Objetivo 1</li>
                 <li>Objetivo 2</li>
                 <li>Objetivo 3</li>
             </ul>
-            <h4 data-aos="fade-up" data-aos-delay="400">Tecnologías Usadas</h4>
-            <p data-aos="fade-up" data-aos-delay="500">Utilizamos tecnologías como [tecnologías específicas] para asegurar la sostenibilidad y eficiencia del proyecto.</p>
+            <h4 class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="400">Tecnologías Usadas</h4>
+            <p class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="500">
+                Utilizamos tecnologías como [tecnologías específicas] para asegurar la sostenibilidad y eficiencia del proyecto.
+            </p>
         </div>
     </section>
 
     <!-- Impacto y Resultados -->
-    <section id="impacto" class="bg-light py-5">
+    <section id="impacto" class="py-5">
         <div class="container">
-            <h2 class="mb-4" data-aos="fade-up">Impacto y Resultados</h2>
+            <h2 class="mb-4 text-verde-oscuro" data-aos="fade-up">Impacto y Resultados</h2>
             <div class="row align-items-center">
                 <div class="col-md-6" data-aos="fade-right">
-                    <p>Detalles sobre cómo el proyecto contribuye al medio ambiente, la sociedad y la economía.</p>
-                    <ul>
+                    <p class="text-verde-oscuro">Detalles sobre cómo el proyecto contribuye al medio ambiente, la sociedad y la economía.</p>
+                    <ul class="text-verde-oscuro">
                         <li>Beneficio 1</li>
                         <li>Beneficio 2</li>
                         <li>Beneficio 3</li>
@@ -59,35 +95,54 @@
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
                     <!-- Modelo 3D -->
-                    <model-viewer src="models/modelo.glb" alt="Modelo 3D del Proyecto" auto-rotate camera-controls background-color="#f0f0f0" style="width: 100%; height: 300px;">
+                    <model-viewer 
+                        src="models/modelo.glb" 
+                        alt="Modelo 3D del Proyecto" 
+                        auto-rotate 
+                        camera-controls 
+                        interaction-prompt="none" 
+                        style="width: 100%; height: 300px;">
                     </model-viewer>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- App -->
+    <section id="app" class="py-5 bg-verde-claro">
+        <div class="container">
+            <h2 class="mb-4 text-verde-oscuro" data-aos="fade-up">Nuestra App</h2>
+            <p class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="100">
+                Aquí puedes describir tu aplicación, sus características y cómo contribuye al proyecto de sostenibilidad.
+            </p>
+            <!-- Agrega más contenido sobre la app -->
+        </div>
+    </section>
+
     <!-- Cómo Involucrarse -->
     <section id="involucrarse" class="py-5">
         <div class="container">
-            <h2 class="mb-4" data-aos="fade-up">Cómo Involucrarse</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Puedes apoyar nuestro proyecto de las siguientes maneras:</p>
-            <ul data-aos="fade-up" data-aos-delay="200">
+            <h2 class="mb-4 text-verde-oscuro" data-aos="fade-up">Cómo Involucrarse</h2>
+            <p class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="100">
+                Puedes apoyar nuestro proyecto de las siguientes maneras:
+            </p>
+            <ul class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="200">
                 <li>Donaciones</li>
                 <li>Voluntariado</li>
                 <li>Asociaciones</li>
             </ul>
-            <a href="#contacto" class="btn btn-primary" data-aos="fade-up" data-aos-delay="300">Contáctanos</a>
+            <a href="#contacto" class="btn btn-verde-claro" data-aos="fade-up" data-aos-delay="300">Contáctanos</a>
         </div>
     </section>
 
     <!-- Equipo -->
-    <section id="equipo" class="bg-light py-5">
+    <section id="equipo" class="py-5 bg-verde-claro">
         <div class="container">
-            <h2 class="mb-4" data-aos="fade-up">Nuestro Equipo</h2>
+            <h2 class="mb-4 text-verde-oscuro" data-aos="fade-up">Nuestro Equipo</h2>
             <div class="row">
                 <!-- Miembro del Equipo 1 -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card">
+                    <div class="card bg-marron-suave text-white">
                         <img src="assets/imagenes/equipo1.jpg" class="card-img-top" alt="Nombre del Miembro">
                         <div class="card-body">
                             <h5 class="card-title">Nombre del Miembro</h5>
@@ -97,7 +152,7 @@
                 </div>
                 <!-- Miembro del Equipo 2 -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card">
+                    <div class="card bg-marron-suave text-white">
                         <img src="assets/imagenes/equipo2.jpg" class="card-img-top" alt="Nombre del Miembro">
                         <div class="card-body">
                             <h5 class="card-title">Nombre del Miembro</h5>
@@ -107,7 +162,7 @@
                 </div>
                 <!-- Miembro del Equipo 3 -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card">
+                    <div class="card bg-marron-suave text-white">
                         <img src="assets/imagenes/equipo3.jpg" class="card-img-top" alt="Nombre del Miembro">
                         <div class="card-body">
                             <h5 class="card-title">Nombre del Miembro</h5>
@@ -119,30 +174,8 @@
         </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="py-5">
-        <div class="container">
-            <h2 class="mb-4" data-aos="fade-up">Contacto</h2>
-            <form data-aos="fade-up" data-aos-delay="100">
-                <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" placeholder="tuemail@ejemplo.com" required>
-                </div>
-                <div class="mb-3">
-                    <label for="mensaje" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-verde-oscuro text-white text-center py-3">
         <div class="container">
             <p>© 2024 Nombre del Proyecto. Todos los derechos reservados.</p>
             <div>
@@ -155,8 +188,10 @@
 
     <!-- Bootstrap JS y dependencias -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <!-- AOS JS -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
     <!-- Scripts Personalizados -->
     <script src="js/scripts.js"></script>
 </body>

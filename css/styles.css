@@ -1,16 +1,119 @@
 /* styles.css */
 
-/* Ajustes para el header */
-header {
-    background-color: #0d6efd; /* Color de fondo de Bootstrap primary */
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+/* Definición de la paleta de colores */
+:root {
+    --color-blanco-yeso: #F9F4EC;
+    --color-verde-principal: #59ba50;
+    --color-verde-claro: #bce6ac;
+    --color-verde-oscuro: #1d8d43;
+    --color-marron-suave: #A1887F;
 }
 
-/* Estilo para el logo */
-header img {
-    max-width: 150px;
-    height: auto;
+/* Fondo general */
+body {
+    background-color: var(--color-blanco-yeso);
+    color: var(--color-verde-oscuro);
+}
+
+/* Navbar */
+.navbar-verde-oscuro {
+    background-color: var(--color-verde-oscuro) !important;
+}
+
+.navbar-verde-oscuro .navbar-brand,
+.navbar-verde-oscuro .nav-link {
+    color: var(--color-blanco-yeso) !important;
+}
+
+.navbar-verde-oscuro .nav-link.active {
+    color: var(--color-verde-principal) !important;
+}
+
+/* Header */
+header {
+    background-color: var(--color-blanco-yeso);
+    color: var(--color-verde-oscuro);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: var(--color-verde-principal);
+}
+
+header p {
+    color: var(--color-verde-oscuro);
+}
+
+header .btn-verde-claro {
+    background-color: var(--color-verde-claro);
+    color: var(--color-verde-oscuro);
+}
+
+header .btn-verde-claro:hover {
+    background-color: var(--color-verde-principal);
+    color: var(--color-blanco-yeso);
+}
+
+/* Secciones */
+section {
+    padding: 60px 0;
+}
+
+section.bg-verde-claro {
+    background-color: var(--color-verde-claro);
+}
+
+section.bg-verde-claro h2,
+section.bg-verde-claro h4,
+section.bg-verde-claro p,
+section.bg-verde-claro ul {
+    color: var(--color-verde-oscuro);
+}
+
+section.bg-verde-claro .btn-verde-claro {
+    background-color: var(--color-verde-principal);
+    color: var(--color-blanco-yeso);
+}
+
+section.bg-verde-claro .btn-verde-claro:hover {
+    background-color: var(--color-verde-oscuro);
+    color: var(--color-blanco-yeso);
+}
+
+/* Cards del Equipo */
+.card.bg-marron-suave {
+    background-color: var(--color-marron-suave);
+}
+
+.card.bg-marron-suave .card-title,
+.card.bg-marron-suave .card-text {
+    color: var(--color-blanco-yeso);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-verde-oscuro);
+    color: var(--color-blanco-yeso);
+}
+
+footer a {
+    color: var(--color-blanco-yeso);
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--color-verde-principal);
+}
+
+/* Botones Personalizados */
+.btn-verde-principal {
+    background-color: var(--color-verde-principal);
+    color: var(--color-blanco-yeso);
+}
+
+.btn-verde-principal:hover {
+    background-color: var(--color-verde-oscuro);
+    color: var(--color-blanco-yeso);
 }
 
 /* Ajustes para model-viewer */
@@ -18,15 +121,3 @@ model-viewer {
     border: 1px solid #ddd;
     border-radius: 8px;
 }
-
-/* Footer estilos */
-footer a {
-    font-size: 1.5rem;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-footer a:hover {
-    color: #0d6efd; /* Color de Bootstrap primary */
-}
-
