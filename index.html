@@ -16,19 +16,18 @@
     
     <!-- Estilos Personalizados -->
     <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
     <link rel="icon" href="assets/imagenes/logo-solo.ico" type="image/x-icon">
+    
     <!-- model-viewer -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-verde-oscuro">
+    <nav class="navbar navbar-expand-lg navbar-verde-oscuro">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/imagenes/logo.png" alt="Logo del Proyecto" width="40" height="40" class="d-inline-block align-text-top">
-                Proyecto Sostenible
-            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,6 +43,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#equipo">Nuestro Equipo</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#anexos">Anexos</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -52,11 +54,27 @@
     <!-- Página Principal -->
     <header class="bg-blanco-yeso text-center py-5">
         <div class="container">
-            <!-- Logo -->
-            <img src="assets/imagenes/logo-solo.png" alt="Logo del Proyecto" class="mb-4" style="width: 150px;">
-            <h1 class="display-4 text-verde-principal">GreenSheel</h1>
-            <p class="lead text-verde-oscuro">Transformando oportunidades</p>
-            <a href="#proyecto" class="btn btn-verde-claro btn-lg mt-3">Descubre más</a>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <!-- Logo -->
+                    <img src="assets/imagenes/logo-solo.png" alt="Logo del Proyecto" class="mb-4" width="90">
+                    <h1 class="display-4 text-verde-principal">GreenSheel</h1>
+                    <p class="lead text-verde-oscuro">Transformando oportunidades</p>
+                    <a href="#proyecto" class="btn btn-verde-claro btn-lg mt-3">Descubre más</a>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <!-- Modelo 3D en el header -->
+                    <model-viewer 
+                        src="models/modelo.glb" 
+                        alt="Modelo 3D del Proyecto" 
+                        auto-rotate 
+                        camera-controls 
+                        interaction-prompt="none" 
+                        rotation-per-second="15deg"
+                        style="width: 100%; height: 300px;">
+                    </model-viewer>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -65,44 +83,36 @@
         <div class="container">
             <h2 class="mb-4 text-verde-oscuro" data-aos="fade-up">Sobre el Proyecto</h2>
             <p class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="100">
-                Nuestro proyecto aborda [descripción del problema] y ofrece soluciones innovadoras en el ámbito de [área de sostenibilidad].
+                La demanda global de plásticos ha crecido exponencialmente, representando una grave amenaza para el medio ambiente y las comunidades. Nuestro proyecto busca transformar el proceso de empaque en la industria alimentaria utilizando bioplásticos derivados de la caña de azúcar, reduciendo la dependencia de plásticos convencionales y promoviendo una economía circular sostenible.
             </p>
             <h4 class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="200">Objetivos</h4>
             <ul class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="300">
-                <li>Objetivo 1</li>
-                <li>Objetivo 2</li>
-                <li>Objetivo 3</li>
+                <li>Reducir la contaminación plástica mediante el uso de bioplásticos de caña de azúcar.</li>
+                <li>Promover la economía circular y la gestión sostenible de residuos.</li>
+                <li>Desarrollar una aplicación digital para incentivar el uso de empaques sostenibles.</li>
             </ul>
             <h4 class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="400">Tecnologías Usadas</h4>
             <p class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="500">
-                Utilizamos tecnologías como [tecnologías específicas] para asegurar la sostenibilidad y eficiencia del proyecto.
+                Utilizamos biopolietileno (Bio-PE) derivado de la caña de azúcar, maquinaria especializada para la fabricación de bioplásticos y tecnologías digitales para el desarrollo de nuestra aplicación que monitorea el impacto ambiental y promueve prácticas sostenibles.
             </p>
         </div>
     </section>
 
     <!-- Impacto y Resultados -->
-    <section id="impacto" class="py-5">
+    <section id="impacto" class="py-5 bg-blanco-yeso">
         <div class="container">
             <h2 class="mb-4 text-verde-oscuro" data-aos="fade-up">Impacto y Resultados</h2>
             <div class="row align-items-center">
                 <div class="col-md-6" data-aos="fade-right">
-                    <p class="text-verde-oscuro">Detalles sobre cómo el proyecto contribuye al medio ambiente, la sociedad y la economía.</p>
+                    <p class="text-verde-oscuro">La adopción de bioplásticos reduce significativamente los desechos plásticos contaminantes, promueve la inversión en la producción agrícola de caña de azúcar, y beneficia a las comunidades rurales mediante la creación de empleos y el desarrollo económico.</p>
                     <ul class="text-verde-oscuro">
-                        <li>Beneficio 1</li>
-                        <li>Beneficio 2</li>
-                        <li>Beneficio 3</li>
+                        <li>Reducción de residuos plásticos en ecosistemas y ciudades.</li>
+                        <li>Impulso a la producción agrícola sostenible de caña de azúcar.</li>
+                        <li>Mejora de la calidad de vida en comunidades rurales.</li>
                     </ul>
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
-                    <!-- Modelo 3D -->
-                    <model-viewer 
-                        src="models/modelo.glb" 
-                        alt="Modelo 3D del Proyecto" 
-                        auto-rotate 
-                        camera-controls 
-                        interaction-prompt="none" 
-                        style="width: 100%; height: 300px;">
-                    </model-viewer>
+                    <!-- Modelo 3D ya está en el header, no es necesario duplicarlo aquí -->
                 </div>
             </div>
         </div>
@@ -113,60 +123,52 @@
         <div class="container">
             <h2 class="mb-4 text-verde-oscuro" data-aos="fade-up">Nuestra App</h2>
             <p class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="100">
-                Aquí puedes describir tu aplicación, sus características y cómo contribuye al proyecto de sostenibilidad.
+                Desarrollamos una aplicación digital que incentiva a las empresas y consumidores a optar por empaques sostenibles. La app permite medir y reducir el uso de plásticos, ofrece datos sobre consumo y guías para optimizar procesos, y proporciona herramientas para calcular el ahorro de emisiones de CO₂ mediante el reciclaje.
             </p>
-            <!-- Agrega más contenido sobre la app -->
+            <!-- Imágenes del wireframe de la app -->
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/imagenes/app-wireframe1.png" alt="Wireframe de la App" class="img-fluid mb-3">
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/imagenes/app-wireframe2.png" alt="Wireframe de la App" class="img-fluid mb-3">
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Cómo Involucrarse -->
-    <section id="involucrarse" class="py-5">
-        <div class="container">
-            <h2 class="mb-4 text-verde-oscuro" data-aos="fade-up">Cómo Involucrarse</h2>
-            <p class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="100">
-                Puedes apoyar nuestro proyecto de las siguientes maneras:
-            </p>
-            <ul class="text-verde-oscuro" data-aos="fade-up" data-aos-delay="200">
-                <li>Donaciones</li>
-                <li>Voluntariado</li>
-                <li>Asociaciones</li>
-            </ul>
-            <a href="#contacto" class="btn btn-verde-claro" data-aos="fade-up" data-aos-delay="300">Contáctanos</a>
-        </div>
-    </section>
-
-    <!-- Equipo -->
-    <section id="equipo" class="py-5 bg-verde-claro">
+    <!-- Nuestro Equipo -->
+    <section id="equipo" class="py-5 bg-blanco-yeso">
         <div class="container">
             <h2 class="mb-4 text-verde-oscuro" data-aos="fade-up">Nuestro Equipo</h2>
             <div class="row">
                 <!-- Miembro del Equipo 1 -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card bg-marron-suave text-white">
-                        <img src="assets/imagenes/equipo1.jpg" class="card-img-top" alt="Nombre del Miembro">
+                        <img src="assets/imagenes/equipo1.jpg" class="card-img-top" alt="Juan Pérez">
                         <div class="card-body">
-                            <h5 class="card-title">Nombre del Miembro</h5>
-                            <p class="card-text">Descripción breve del rol y experiencia.</p>
+                            <h5 class="card-title">Juan Pérez</h5>
+                            <p class="card-text">Ingeniero Ambiental con experiencia en gestión de residuos y sostenibilidad.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Miembro del Equipo 2 -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card bg-marron-suave text-white">
-                        <img src="assets/imagenes/equipo2.jpg" class="card-img-top" alt="Nombre del Miembro">
+                        <img src="assets/imagenes/equipo2.jpg" class="card-img-top" alt="María Gómez">
                         <div class="card-body">
-                            <h5 class="card-title">Nombre del Miembro</h5>
-                            <p class="card-text">Descripción breve del rol y experiencia.</p>
+                            <h5 class="card-title">María Gómez</h5>
+                            <p class="card-text">Desarrolladora de Software especializada en aplicaciones sostenibles y economía circular.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Miembro del Equipo 3 -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card bg-marron-suave text-white">
-                        <img src="assets/imagenes/equipo3.jpg" class="card-img-top" alt="Nombre del Miembro">
+                        <img src="assets/imagenes/equipo3.jpg" class="card-img-top" alt="Carlos López">
                         <div class="card-body">
-                            <h5 class="card-title">Nombre del Miembro</h5>
-                            <p class="card-text">Descripción breve del rol y experiencia.</p>
+                            <h5 class="card-title">Carlos López</h5>
+                            <p class="card-text">Especialista en biotecnología con enfoque en producción de bioplásticos a partir de caña de azúcar.</p>
                         </div>
                     </div>
                 </div>
@@ -174,10 +176,27 @@
         </div>
     </section>
 
+    <!-- Anexos -->
+    <section id="anexos" class="py-5 bg-verde-claro">
+        <div class="container">
+            <h2 class="mb-4 text-verde-oscuro" data-aos="fade-up">Anexos</h2>
+            <div class="row">
+                <!-- Imagen del wireframe de la app -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/imagenes/app-wireframe1.png" alt="Wireframe de la App" class="img-fluid mb-3">
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/imagenes/app-wireframe2.png" alt="Wireframe de la App" class="img-fluid mb-3">
+                </div>
+                <!-- Agrega más anexos si es necesario -->
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-verde-oscuro text-white text-center py-3">
         <div class="container">
-            <p>© 2024 Nombre del Proyecto. Todos los derechos reservados.</p>
+            <p>© 2024 GreenSheel. Todos los derechos reservados.</p>
             <div>
                 <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
                 <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
@@ -196,3 +215,4 @@
     <script src="js/scripts.js"></script>
 </body>
 </html>
+

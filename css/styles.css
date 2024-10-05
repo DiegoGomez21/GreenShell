@@ -16,14 +16,12 @@ body {
 }
 
 /* Navbar */
-.navbar-verde-oscuro {
-    background-color: var(--color-verde-oscuro) !important;
+
+.nav-link{
+    color: var(--color-verde-oscuro) !important;
 }
 
-.navbar-verde-oscuro .navbar-brand,
-.navbar-verde-oscuro .nav-link {
-    color: var(--color-blanco-yeso) !important;
-}
+
 
 .navbar-verde-oscuro .nav-link.active {
     color: var(--color-verde-principal) !important;
