@@ -1,0 +1,32 @@
+/* styles.css */
+
+/* Ajustes para el header */
+header {
+    background-color: #0d6efd; /* Color de fondo de Bootstrap primary */
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Estilo para el logo */
+header img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Ajustes para model-viewer */
+model-viewer {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Footer estilos */
+footer a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #0d6efd; /* Color de Bootstrap primary */
+}
+
